@@ -1,0 +1,4 @@
+React is just an easier way to write HTML/CSS/JS, its a new syntax ,that under the hood gets converted to html/css/js.
+
+why do we need react ?
+for dynamic websites, these libraries make it easier to do DOM manupulation
