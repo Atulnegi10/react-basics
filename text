@@ -2,3 +2,42 @@ React is just an easier way to write HTML/CSS/JS, its a new syntax ,that under t
 
 why do we need react ?
 for dynamic websites, these libraries make it easier to do DOM manupulation
+
+STATE,COMPOMENTS AND RE-RENDERING
+
+whatever is used with use- is a hook in reactt
+
+State is data stored inside a component that can change over time.
+
+count     → current state value
+setCount  → function to update count
+0         → initial value
+
+State = changing data that React keeps track of for a component.
+
+Props are data passed from a parent component to a child component.
+Props = information a parent gives to a child
+
+-rendering means React runs a component again to determine what its UI should look like now.
+
+State changed
+     ↓
+App runs again
+     ↓
+count = 1
+     ↓
+React sees the new UI
+     ↓
+Browser displays 1
+
+| State                            | Props                                      |
+| -------------------------------- | ------------------------------------------ |
+| Data managed by a component      | Data passed to a component                 |
+| Can change using setter          | Child should treat props as read-only      |
+| `useState()` commonly creates it | Passed through JSX                         |
+| Causes updates when changed      | Changed props can cause child to re-render |
+| `count`                          | `props.count`                              |
+
+
+Remember this one sentence
+State is changing data → props pass data between components → when relevant state/props change, React re-renders the component to update the UI.
