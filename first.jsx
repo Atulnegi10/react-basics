@@ -9,12 +9,11 @@ export default function App(){
   }
   return(
     <div>
-    <button onClickHandler = {onClickHandler}>
+    <button onClickHandler= {onClickHandler}>
     </button>
     </div>
   );
 }
-
 function button(props){
   return (
     <button onClick={props.onClickHandler}>
@@ -22,3 +21,4 @@ function button(props){
     </button>
   );
 }
+//dont mind this file
