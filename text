@@ -45,4 +45,4 @@ State is changing data → props pass data between components → when relevant 
 completed the first video 
 git add .
 git commit -m "updated one file"
-git push
+git push 
