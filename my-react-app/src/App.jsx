@@ -10,23 +10,22 @@ function App() {
 function Counter(){
    const [count, setcount] = useState(0);
 
-   
-
    useEffect(()=>{
-    setInterval(function(){
+    const interval = setInterval(function(){
     setcount(count => count + 1);
    },1000)
-
+     console.log('useEffect called')
+      return () => {
+        clearInterval(interval);
+    };
    },[]);
 
-   function increaseCount(){
-      setcount(count + 1);
-   }
+   
    
    return (
     <div>
      <h1 id='text'>{count}</h1>
-     <button onClick={increaseCount}>increase count</button>
+    
     </div>
    );
   
