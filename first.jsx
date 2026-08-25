@@ -14,6 +14,7 @@ export default function App(){
     </div>
   );
 }
+
 function button(props){
   return (
     <button onClick={props.onClickHandler}>
@@ -21,4 +22,4 @@ function button(props){
     </button>
   );
 }
-//dont mind this file
+//only for practice 
