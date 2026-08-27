@@ -42,7 +42,7 @@ Browser displays 1
 Remember this one sentence
 State is changing data → props pass data between components → when relevant state/props change, React re-renders the component to update the UI.
 
-pushh 
+pushh .
 completed the first video 
 git add .
 git commit -m "updated one file"
