@@ -1,8 +1,17 @@
 import { useEffect, useState } from 'react';
 function App() {
+  let [countervisible, setcountervisible] = useState(true);
+
+  useEffect(function(){
+    setInterval(function(){
+      setcountervisible(countervisible => !countervisible);
+    }, 5000);
+  },[]);
   return (
     <div>
-      <Counter></Counter> 
+      hi
+      {countervisible && <Counter></Counter>}
+      hello
     </div>
   );
 }
@@ -12,10 +21,12 @@ function Counter(){
 
    useEffect(()=>{
     const interval = setInterval(function(){
+      console.log('called from inside')
     setcount(count => count + 1);
    },1000)
-     console.log('useEffect called')
+     
       return () => {
+        console.log("on unmount")
         clearInterval(interval);
     };
    },[]);
