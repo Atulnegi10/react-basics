@@ -43,3 +43,25 @@ function Counter(){
 }
 
 export default App;
+
+// App mounts
+//    ↓
+// App interval starts (5 sec)
+//    ↓
+// Counter mounts
+//    ↓
+// Counter interval starts (1 sec)
+//    ↓
+// 5 sec
+//    ↓
+// Counter unmounts
+//    ↓
+// Counter cleanup → clearInterval()
+//    ↓
+// Counter timer stops
+//    ↓
+// 5 sec later
+//    ↓
+// Counter mounts again
+//    ↓
+// New Counter timer starts
