@@ -48,3 +48,7 @@ completed the first video
 git add .
 git commit -m "updated one file"
 git push  
+
+vite is a build tool whcih is used to provide faster and leaner development experience for modern web project.it consists of two parts 
+1. a dev feature that provides  a rich feature enhancements  over native ES modules
+2. a build command that bundles your code with rollup
