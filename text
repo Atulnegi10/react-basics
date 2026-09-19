@@ -41,12 +41,13 @@ Browser displays 1
 
 Remember this one sentence
 
+ej
 State is changing data → props pass data between components → when relevant state/props change, React re-renders the component to update the UI.
 
 pushh . 
 completed the first video 
 git add .
-git commit -m "updated one file"
+git commit -m "updated one file" 
 git push  
 
 vite is a build tool whcih is used to provide faster and leaner development experience for modern web project.it consists of two parts 
