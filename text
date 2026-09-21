@@ -53,3 +53,6 @@ git push
 vite is a build tool whcih is used to provide faster and leaner development experience for modern web project.it consists of two parts 
 1. a dev feature that provides  a rich feature enhancements  over native ES modules
 2. a build command that bundles your code with rollup
+
+component - are the building blocks of the user interface, they allow you to split the ui into independent,reusable peices that can be thought of as a custom, self contained html element.
+
